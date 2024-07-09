@@ -18,7 +18,7 @@ const list = document.querySelector('#list')
 
 async function start(){
     try{
-        let resp = await fetch('https://jsonplaceholder.typicode.com/users',
+        let resp = await fetch('/dataBase.json',
         {
             method: 'GET' /*'GET' идёт по умолчанию, если мне нужно только получить данные, то второй атрибут с menthod можно вообще не прописывать. fetch возвращает нам promise*/
         })
